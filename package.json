@@ -1,9 +1,14 @@
 {
-  "name": "ui-definitions-docs",
+  "name": "vue-theme-ui",
   "version": "2.0.0",
   "description": "A user interface definition documentation based on components, compositions, and pattern layouts.",
-  "author": "elsiosanchez <elsiosanches@gmail.com>",
+  "author": "Elsios Snchez <elsiosanches@gmail.com>",
   "contributors": [
+    {
+      "name": "Elsio Sanchez",
+      "url": "https://github.com/elsiosanches/",
+      "email": "elsiosanchez15@outlook.com"
+    },
     {
       "name": "Edwin Betancourt",
       "url": "https://github.com/EdwinBetanc0urt/",
