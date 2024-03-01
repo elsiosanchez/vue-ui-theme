@@ -12,7 +12,7 @@ actions:
     type: primary
 
   - text: Guia
-    icon: signs-post
+    icon: book-open
     link: /guide/
 
 # features:
@@ -110,3 +110,4 @@ copyright: false
 footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ---
 
+ADempiere-Vue es una nueva interfaz de usuario para ADempiere ERP, CRM y SCM. Se basa en Vue<i class="fa-brands fa-vuejs" style="color: #63E6BE;"></i>, Nuxt y utiliza el UI Toolkit Element-Plus. Es una gran interfaz de usuario para ADempiere ERP, CRM y SCM, basado en la pila de desarrollo más reciente de Vue, solución i18n incorporada, plantillas típicas para aplicaciones empresariales, un montón de características impresionantes. Este proyecto fue bifurcado de Vue-Element-Admin

@@ -12,7 +12,7 @@ actions:
     type: primary
 
   - text: Guide
-    icon: signs-post
+    icon: book-open
     link: /guide/
 
   # - text: Demos
@@ -113,3 +113,36 @@ actions:
 copyright: false
 footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ---
+
+ADempiere-Vue is a new UI for ADempiere ERP, CRM & SCM. It is based on  Vue<i class="fa-brands fa-vuejs" style="color: #63E6BE;"></i> , Nuxt and uses the UI Toolkit Element-Plus. It is a great UI for ADempiere ERP, CRM & SCM, based on the newest development stack of Vue, built-in i18n solution, typical templates for enterprise applications, lots of awesome features. This project was forked from Vue-Element-Admin
+<!-- 
+## 🚀Usage
+
+::: code-tabs#language
+
+@tab TS
+
+```ts title=".vuepress/config.ts"
+import { defineUserConfig } from "vuepress";
+import { hopeTheme } from "vuepress-theme-hope";
+
+export default defineUserConfig({
+  theme: hopeTheme({
+    // your theme config here
+  }),
+});
+```
+
+@tab JS
+
+```js title=".vuepress/config.js"
+import { hopeTheme } from "vuepress-theme-hope";
+
+export default {
+  theme: hopeTheme({
+    // your theme config here
+  }),
+};
+```
+
+::: -->
