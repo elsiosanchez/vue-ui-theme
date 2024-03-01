@@ -157,11 +157,12 @@ export default hopeTheme({
       components: ["Badge", "VPCard"],
     },
 
-    feed: {
-      atom: true,
-      json: true,
-      rss: true,
-    },
+    // feed: {
+    //   atom: true,
+    //   json: true,
+    //   rss: true,
+    // },
+    search: true,
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
