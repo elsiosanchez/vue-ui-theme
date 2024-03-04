@@ -1,6 +1,6 @@
 ---
 title: Empezar
-icon: signs-post
+icon: rocket
 star: true
 sticky: 10
 dir:
@@ -14,39 +14,40 @@ category:
 
 Este proyecto es una solución front-end lista para producción para interfaces de administración. Está basado en [Vue](https://vuejs.org/), [Nuxt](https://nuxt.com/) y utiliza el kit de interfaz de usuario [Element Plus](https://element-plus.org/).
 
-## 🛠 Primeros pasos
+## 🛠 Clonar el Projecto
 
-::: code-tabs#shell
+:::: info Clone the Project
 
-@tab npm
+<FontIcon icon="file-code" /> **Instalar frontend-core**:
 
-```bash
-# Clonar el Projecto
-git clone https://github.com/adempiere/adempiere-vue.git
+::: tabs#shell
 
-# Instalar las Dependencia
-npm install
-
-# Modo Desarrollo
-npm run dev
-
-# Modo Producción
-npm run build
-```
-
-@tab yarn
+@tab Usando HTTPS
 
 ```bash
-# Clonar el Projecto
-git clone https://github.com/adempiere/adempiere-vue.git
-
-# Instalar las Dependencia
-yarm
-
-# Modo Desarrollo
-yarm run dev
-
-# Modo Producción
-yarm run build
+https://github.com/solop-develop/frontend-core.git
 ```
+Clonar usando la URL web.
+
+@tab Usando SHH
+
+> [!important]
+> No tienes ninguna clave SSH pública en tu cuenta de GitHub. Puede [agregar una nueva clave pública](https://github.com/settings/ssh/new) o intentar clonar este repositorio a través de HTTPS.
+
+
+```bash
+git@github.com:solop-develop/frontend-core.git
+```
+
+Utilice una clave SSH protegida con contraseña.
+
+
+@tab:active GitHub CLI
+
+```bash
+gh repo clone solop-develop/frontend-core
+```
+Trabaje rápido con nuestra CLI oficial. [Aprende más](https://cli.github.com/)
 :::
+
+::::

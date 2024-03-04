@@ -4,10 +4,15 @@ export const esSidebar = sidebar({
   "/es/": [
     "",
     {
-      text: "Documentación",
-      icon: "signs-post",
-      prefix: "docs/",
-      children: "structure",
-    }
+      text: "Empezar",
+      link: "get-started/",
+      icon: "rocket",
+      children: [
+        "get-started/Develop/",
+        "get-started/Build/",
+        "get-started/Docker/"
+      ]
+    },
+    { text: "Guide", icon: "book-open", link: "/guide/" },
   ],
 });

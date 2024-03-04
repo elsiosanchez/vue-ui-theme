@@ -169,6 +169,7 @@ export default hopeTheme({
       attrs: true,
       codetabs: true,
       component: true,
+      alert: true,
       demo: true,
       figure: true,
       imgLazyload: true,
