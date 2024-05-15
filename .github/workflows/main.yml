@@ -1,0 +1,61 @@
+name: Deploy PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+    branches:
+      - main
+
+jobs:
+  create-deployment-preview:
+    if: github.event.action == 'opened'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages-pr-${{ github.event.pull_request.number }}
+          folder: dist
+
+  update-deployment-preview:
+    if: github.event.action == 'synchronize'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages-pr-${{ github.event.pull_request.number }}
+          folder: dist
+
+  delete-deployment-preview:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Delete branch
+        run: |
+          git branch -D gh-pages-pr-${{ github.event.pull_request.number }}
+          git push origin --delete gh-pages-pr-${{ github.event.pull_request.number }}
